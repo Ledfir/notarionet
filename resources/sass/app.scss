@@ -1,0 +1,75 @@
+// Vendor
+  // Bootstrap
+  // @import "~bootstrap/scss/bootstrap.scss";
+  @import "~bootstrap/dist/css/bootstrap.css";
+  @import "~bootstrap-vue/dist/bootstrap-vue.css";
+
+  // Alertify
+  // @import "~alertifyjs/build/css/alertify.min";
+  // @import "~alertifyjs/build/css/themes/default.min";
+
+  // vue-datetime
+  // @import '~vue-datetime/dist/vue-datetime.min';
+  // @import "./vendor/vue-datetime.scss";
+
+  // Swiper carousel vue
+  @import "~swiper/css/swiper.css";
+
+  // VueSweetalert2
+  // @import '~sweetalert2/dist/sweetalert2.min.css';
+
+  // Font awesome
+    // == (Version no PRO) Por medio de NPM, se requiere haber instalado Fontawesome
+    // $fa-font-path: "../extras/css/font-awesome/webfonts";
+    // @import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+    // @import "~@fortawesome/fontawesome-free/scss/solid.scss";
+    // @import "~@fortawesome/fontawesome-free/scss/brands.scss";
+    // @import "~@fortawesome/fontawesome-free/scss/regular.scss";
+
+    // == (Version PRO v5.15.3 :v) Manualmente importando de public/extras/css/font-awesome ...
+    $fa-font-path: "../extras/css/font-awesome/webfonts";
+    @import "public/extras/css/font-awesome/scss/fontawesome.scss";
+    @import "public/extras/css/font-awesome/scss/solid.scss";
+    @import "public/extras/css/font-awesome/scss/brands.scss";
+    @import "public/extras/css/font-awesome/scss/regular.scss";
+    @import "public/extras/css/font-awesome/scss/duotone.scss";
+    @import "public/extras/css/font-awesome/scss/light.scss";
+
+// Utils
+@import "./utils/toolbox.scss";
+@import "./utils/variables.scss";
+@import "./utils/animations.scss";
+
+// Base
+@import "./base/global.scss";
+@import './base/fonts.scss';
+
+// Elements
+@import "./elements/titles.scss";
+@import "./elements/forms.scss";
+@import "./elements/buttons.scss";
+
+// Layout
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+@import "./layout/modals.scss";
+@import "./layout/image-uploader-component.scss";
+@import "./layout/box-credits.scss";
+@import "./layout/box-contracts.scss";
+@import "./layout/box-accreditation.scss";
+@import "./layout/box-breadcrumb.scss";
+@import "./layout/carousels.scss";
+@import "./layout/check-component.scss";
+
+// Pages
+@import "./pages/home.scss";
+@import "./pages/info-page-1.scss";
+@import "./pages/info-page-2.scss";
+@import "./pages/packages.scss";
+@import "./pages/contact.scss";
+@import "./pages/contracts.scss";
+@import "./pages/text-page.scss";
+
+@import "./pages/cart.scss";
+@import "./pages/user-access.scss";
+@import "./pages/user-account.scss";

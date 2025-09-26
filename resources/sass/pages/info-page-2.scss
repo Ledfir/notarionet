@@ -1,0 +1,41 @@
+#info-page-s2{
+
+  .main-section{
+    padding-top: 35px;
+		padding-bottom: 35px;
+
+    >.row{
+      min-height: 55vh;
+    }
+
+    .col-image{
+      text-align: center;
+
+      img{
+        max-width: 100%;
+
+        &.max-75{
+          max-height: 75vh;
+        }
+      }
+    }
+
+    .col-info{
+      font-size: 0.95rem;
+  		line-height: 1.25;
+
+  		h2,h3,h4,h5,h6{
+  			font-weight: 600;
+  		}
+
+  		h5{
+  			font-size: 1.10rem;
+  		}
+
+  		.title-s-1{
+  			text-align: center;
+  		}
+    }
+	}
+
+}

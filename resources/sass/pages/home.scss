@@ -1,0 +1,301 @@
+#home-page{
+	position: relative;
+
+	.btn-fl-validator {
+		position: fixed;
+		padding: 10px 18px 9px 18px;
+		bottom: 100px;
+		right: 0px;
+		color: #ffffff;
+		cursor: pointer;
+		font-size: 1.05rem;
+		font-weight: 500;
+		text-transform: uppercase;
+		text-decoration: none !important;
+		border-radius: 7px 0 0 7px;
+		background-color: #97182e;
+		z-index: 199;
+
+		&:hover {
+			padding: 10px 24px 9px 18px;
+			background-color: #801023;
+		}
+	}
+
+	// == Banners ==
+	.banner-section{
+		.swiper{
+			.swiper-slide{
+				a{
+					display: block;
+				}
+
+				img{
+					width: 100%;
+				}
+			}
+		}
+		.swiper-s1{
+			.swiper-button-prev, .swiper-button-next{
+				color: #ffffff;
+
+				&:after{
+					font-size: 1.6rem;
+					font-weight: 700;
+				}
+			}
+		}
+
+		.swiper-desktop{}
+		.swiper-mobile{
+			display: none;
+		}
+		@media screen and (max-width: 991px){
+			.swiper-desktop{
+				display: none !important;
+			}
+			.swiper-mobile{
+				display: block !important;
+			}
+		}
+	}
+	// == ==
+
+	// == How ==
+	.how-works-section{
+		padding-top: 38px;
+		padding-bottom: 35px;
+
+		.col-how{
+			padding-top: 20px;
+			padding-bottom: 20px;
+			text-align: center;
+
+			h5{
+				margin-top: 22px;
+				font-size: 1.05rem;
+			}
+		}
+	}
+	// == ==
+
+	// == Advantages ==
+	.advantages-section{
+		position: relative;
+		padding-top: 38px;
+		padding-bottom: 35px;
+		background-color: #efefef;
+
+		.col-image{
+			text-align: center;
+
+			img{
+				max-width: 92%;
+			}
+		}
+
+		.col-info{
+			.box-info{
+				padding-top: 6px;
+				padding-bottom: 5px;
+				padding-left: 28px;
+				margin-top: 22px;
+				margin-bottom: 22px;
+				min-height: 60px;
+				border-left: 6px solid $blue;
+
+				.inside{
+					display: inline-block;
+					width: 100%;
+					font-size: 1.2rem;
+					line-height: 1.15;
+					text-align: left;
+				}
+			}
+		}
+
+		@media screen and (min-width: 1800px){
+			.col-info{
+				.box-info{
+					.inside{
+						font-size: 1.3rem;
+						line-height: 1.2;
+					}
+				}
+			}
+		}
+		@media screen and (max-width: 575px){
+			.col-info{
+				.box-info{
+					margin-top: 14px;
+					margin-bottom: 14px;
+					min-height: 50px;
+
+					.inside{
+						font-size: 1.1rem;
+					}
+				}
+			}
+		}
+	}
+	// == ==
+
+	// == Packages ==
+	.packages-section{
+		position: relative;
+		padding-top: 46px;
+		padding-bottom: 44px;
+
+		.col-carousel{
+			.swiper{
+				.swiper-wrapper{
+					.swiper-slide{
+						padding-bottom: 32px;
+					}
+				}
+
+				.swiper-pagination{
+					bottom: 0;
+
+					.swiper-pagination-bullet{
+						width: 10px;
+						height: 10px;
+					}
+
+					.swiper-pagination-bullet-active{
+						background-color: #000000;
+					}
+				}
+			}
+		}
+
+		.box-credit-s1{}
+	}
+	// == ==
+
+	// == Agreements ==
+	.agreements-section{
+		position: relative;
+		padding-top: 46px;
+		padding-bottom: 48px;
+		background-color: #efefef;
+
+		.swiper{
+			padding-top: 5px;
+
+			.swiper-wrapper{
+				.swiper-slide{
+					padding-top: 3px;
+					padding-bottom: 3px;
+				}
+			}
+
+			.swiper-button-prev{
+				left: 15px;
+			}
+			.swiper-button-next{
+				right: 15px;
+			}
+
+			.swiper-button-prev, .swiper-button-next{
+				top: 37%;
+				// opacity: 1;
+				color: #ffffff;
+
+				&:after{
+					font-size: 2.2rem;
+				}
+			}
+		}
+	}
+	// == ==
+
+	// == Extra banner ==
+	.banner-2-section {
+		position: relative;
+		background-color: $soft-gray;
+		background-image: url('../images/pages/home/bg-banner-2.jpg');
+
+		.btn-full {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 5;
+
+			&:hover {
+				background-color: rgba(255,255,255,0.07);
+			}
+		}
+
+		.container {
+			>.row {
+				padding-top: 25px;
+				padding-bottom: 25px;
+				min-height: 280px;
+				align-items: center;
+				color: #fff;
+
+				.title {
+					margin-bottom: 12px;
+					font-size: 2.3rem;
+					font-weight: 800;
+					text-shadow: 2px 2px 2px rgba(0,0,0,0.65);
+					text-transform: uppercase;
+				}
+
+				.subtitle {
+					font-size: 1.80rem;
+					font-weight: 600;
+					text-shadow: 1px 1px 3px rgba(0,0,0,0.9);
+					text-transform: uppercase;
+				}
+
+				.btn-s1 {
+					border: 1px solid rgba(255,255,255,0.4);
+				}
+			}
+		}
+
+		@media screen and (max-width: 1199px) {
+			text-align: center;
+		}
+		@media screen and (max-width: 991px) {
+			.container {
+				>.row {
+					.title {
+						font-size: 1.95rem;
+					}
+
+					.subtitle {
+						font-size: 1.50rem;
+					}
+				}
+			}
+		}
+		@media screen and (max-width: 499px) {
+			.container {
+				>.row {
+					.title {
+						font-size: 1.70rem;
+					}
+
+					.subtitle {
+						font-size: 1.30rem;
+					}
+				}
+			}
+		}
+	}
+	// == ==
+
+	// == Accreditations ==
+	.accreditations-section{
+		position: relative;
+		padding-top: 46px;
+		padding-bottom: 48px;
+		background-color: #efefef;
+	}
+	// == ==
+}

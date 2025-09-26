@@ -1,0 +1,9 @@
+.t-150{
+  @include transition(150ms);
+}
+.t-250{
+  @include transition(250ms);
+}
+.t-400{
+  @include transition(400ms);
+}

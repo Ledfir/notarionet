@@ -1,0 +1,27 @@
+.swiper-s2{
+  .swiper-button-prev, .swiper-button-next{
+    width: 24px;
+    height: 40px;
+
+    &:after{
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+  }
+  .swiper-button-prev{
+    left: 1px;
+  }
+  .swiper-button-next{
+    right: 1px;
+  }
+
+  &.s-btn-black{
+    .swiper-button-prev, .swiper-button-next{
+      background-color: $black;
+
+      &:after{
+        color: #ffffff;
+      }
+    }
+  }
+}

@@ -1,0 +1,135 @@
+.box-image-uploader{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #000000;
+
+  .empty{
+    width: 100%;
+  }
+
+  .box-btn-photo{
+    position: absolute;
+    margin-bottom: 0 !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+
+    >div{
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+      .fake-label{
+        position: absolute;
+        @include flex-center-xy();
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+
+        .inside{
+          display: inline-block;
+          padding: 15px 20px;
+          width: 100%;
+          text-align: center;
+
+          h5{
+            color: #6b6b6b;
+            font-size: 2.3rem;
+            font-weight: 300;
+          }
+        }
+      }
+
+      input{
+        opacity: 0;
+      }
+    }
+  }
+
+  .box-img-fake{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    .inside{
+      display: inline-block;
+      margin-bottom: 30px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+.box-image-signature{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #000000;
+
+  .empty{
+    width: 100%;
+  }
+
+  .box-btn-signature{
+    position: absolute;
+    @include flex-center-xy();
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 5;
+
+    .inside{
+      display: inline-block;
+      padding: 15px 20px;
+      width: 100%;
+      text-align: center;
+
+      h5{
+        color: #6b6b6b;
+        font-size: 2.3rem;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .box-fake-signature{
+    position: absolute;
+    display: flex;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+
+    .fake-image{
+      display: inline-block;
+      margin-top: 20px;
+      width: calc(100% - 30px);
+      height: calc(100% - 105px);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .box-button{
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

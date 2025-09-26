@@ -1,0 +1,44 @@
+.box-accreditation-s1{
+  padding-top: 25px;
+  padding-bottom: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  @include transition(150ms);
+
+  &:hover {
+    background: rgba(0,0,0,0.04);
+  }
+
+  .box-image{
+    display: block;
+    padding: 4px 0 24px 0;
+    text-align: center;
+  }
+
+  .box-info{
+    display: block;
+    text-align: center;
+
+    .title{
+      min-height: 50px;
+      font-size: 1.20rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+
+    .date{
+      margin-top: 7px;
+      font-size: 1.03rem;
+      font-weight: 600;
+    }
+  }
+
+  @media screen and (max-width: 575px){
+    .box-info{
+      .title{
+        min-height: inherit;
+      }
+    }
+  }
+}

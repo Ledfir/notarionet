@@ -1,0 +1,53 @@
+.btn-s1{
+  padding-top: 11px;
+  padding-bottom: 9px;
+  min-width: 200px;
+  color: #ffffff !important;
+  cursor: pointer;
+  font-size: 1.00rem;
+  text-decoration: none !important;
+  border-radius: 0;
+
+  &.btn-sm{
+    padding: 0.2rem 0.5rem 0.25rem 0.5rem;
+    min-width: 140px;
+    font-size: 0.80rem;
+  }
+
+  &.bg-black{
+    border-color: $black;
+    background-color: $black;
+
+    &:hover{
+      border-color: $black2 !important;
+      background-color: $black2 !important;
+    }
+  }
+
+  &.bg-blue{
+    border-color: $blue;
+    background-color: $blue;
+
+    &:hover{
+      border-color: $blue2 !important;
+      background-color: $blue2 !important;
+    }
+  }
+
+  &.disabled, &[disabled="disabled"]{
+    cursor: not-allowed !important;
+    opacity: 0.65;
+
+    &.bg-black{
+      &:hover{
+        border-color: $black !important;
+        background-color: $black !important;
+      }
+    }
+  }
+}
+a.btn-s1{
+  &[disabled="disabled"]{
+    pointer-events: none !important;
+  }
+}

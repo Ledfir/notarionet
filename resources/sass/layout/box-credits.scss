@@ -1,0 +1,329 @@
+// == Box de créditos ==
+.box-credit-s1{
+  a.box{
+    cursor: pointer;
+    text-decoration: none;
+    @include transition(150ms);
+
+    &:hover{
+      opacity: 0.80;
+    }
+  }
+  .box{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 20px 24px;
+    color: #000000;
+    border: 1px solid #000000;
+
+    .col-image{
+      padding-left: 0;
+
+      img{
+        max-width: 88%;
+      }
+    }
+
+    .col-info-1{
+      padding: 0;
+      margin-top: 12px;
+      text-align: center;
+
+      .num{
+        min-height: 66px;
+        font-size: 4.1rem;
+        font-weight: 700;
+        line-height: 1.0;
+      }
+
+      .name{
+        margin-top: 9px;
+        font-weight: 600;
+      }
+
+      .descr {
+        display: block;
+        padding-top: 5px;
+        min-height: 39px;
+        font-size: 0.9rem;
+        line-height: 1.15;
+      }
+
+      .price{
+        display: inline-block;
+        padding: 14px 15px 12px 15px;
+        margin-top: 11px;
+        width: 100%;
+        color: #ffffff;
+        font-weight: 600;
+        line-height: 1.1;
+        letter-spacing: 1px;
+        background-color: $blue;
+
+        &.inverted {
+          padding: 10px 15px 8px 15px;
+          color: #000000;
+          font-size: 1.1rem;
+          font-weight: 700;
+          border-top: 1px solid #000;
+          border-bottom: 1px solid #000;
+          background: transparent;
+        }
+      }
+    }
+
+    .col-info-2{
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 22px;
+      padding: 0;
+
+      .col-text{
+        padding-left: 0;
+        line-height: 1;
+        font-size: 1.10rem;
+        font-weight: 600;
+        letter-spacing: 5px;
+      }
+
+      .col-image{
+        flex: 0 0 56%;
+        max-width: 56%;
+        padding-right: 0;
+
+        img{
+          max-width: 100%;
+        }
+      }
+    }
+
+    .col-button{
+      padding: 0;
+      margin-top: 20px;
+
+      ._btn{
+        display: inline-block;
+        padding: 14px 15px 12px 15px;
+        width: 100%;
+        color: #000000;
+        font-weight: 600;
+        line-height: 1.1;
+        letter-spacing: 1px;
+        text-align: center;
+        text-decoration: none !important;
+        border: 1px solid #000000;
+        background-color: transparent;
+
+        span{
+          &.selected{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .custom-control-label{
+    cursor: pointer;
+    width: 100%;
+
+    &:before, ,&:after{
+      display: none;
+    }
+  }
+
+  .custom-control-input:checked ~ .custom-control-label{
+    .box{
+      .col-button{
+        ._btn{
+          color: #ffffff;
+          background-color: #000000;
+
+          span{
+            display: none;
+
+            &.selected{
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1399px){
+    .box{
+      .col-info-2{
+        .col-text{
+          font-size: 1.00rem;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1299px){
+    .box{
+      .col-info-2{
+        .col-text{
+          font-size: 0.95rem;
+          letter-spacing: 3px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1199px){
+    .box{
+      >.col-image{
+        padding-right: 0;
+        text-align: center;
+
+        img{
+          margin-left: 13%;
+        }
+      }
+
+      .col-info-2{
+        .col-text{
+          letter-spacing: 0;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+    .box{
+      .col-info-1 {
+        .name {
+          min-height: 48px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 767px){
+    .box{
+      .col-info-2{
+        .col-text{
+          font-size: 1.05rem;
+          letter-spacing: 3px;
+        }
+      }
+    }
+  }
+}
+// == ==
+
+// == Col de creditos dentro de un input "radio" adaptado ==
+.box-credit-s2{
+  padding-bottom: 20px;
+  padding-left: 15px;
+
+  .custom-control-label{
+    cursor: pointer;
+    width: 100%;
+
+    &:before, ,&:after{
+      display: none;
+    }
+  }
+
+  .box{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 20px 24px;
+    border: 1px solid #000000;
+
+    .col-image{
+      padding-left: 0;
+
+      img{
+        max-height: 151px;
+        max-width: 88%;
+      }
+    }
+
+    .col-info-1{
+      padding: 0;
+      margin-top: 12px;
+      text-align: center;
+
+      .num{
+        min-height: 66px;
+        font-size: 4.1rem;
+        font-weight: 700;
+        line-height: 1.0;
+      }
+
+      .name{
+        margin-top: 9px;
+        font-size: 1.10rem;
+        font-weight: 500;
+      }
+
+      .price{
+        display: inline-block;
+        margin-top: 6px;
+        width: 100%;
+        color: #000000;
+        font-size: 1.30rem;
+        font-weight: 600;
+        line-height: 1.1;
+        letter-spacing: 1px;
+      }
+    }
+
+    .col-button{
+      padding: 0;
+      margin-top: 20px;
+
+      ._btn{
+        display: inline-block;
+        padding: 14px 15px 12px 15px;
+        width: 100%;
+        color: #000000;
+        font-weight: 600;
+        line-height: 1.1;
+        letter-spacing: 1px;
+        text-align: center;
+        text-decoration: none !important;
+        border: 1px solid #000000;
+        background-color: transparent;
+
+        span{
+          &.selected{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .custom-control-input:checked ~ .custom-control-label{
+    .box{
+      .col-button{
+        ._btn{
+          color: #ffffff;
+          background-color: #000000;
+
+          span{
+            display: none;
+
+            &.selected{
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1199px){
+    .box{
+      .col-image{
+        text-align: center;
+      }
+    }
+  }
+}
+// == ==

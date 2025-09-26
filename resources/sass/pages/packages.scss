@@ -1,0 +1,45 @@
+#packages-page{
+
+  .packages-section{
+    padding-top: 35px;
+		padding-bottom: 35px;
+
+    .box-packages-options{
+      >div{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -15px;
+        margin-right: -15px;
+        justify-content: center;
+      }
+    }
+
+    .col-credit-s2{}
+  }
+
+  .payment-section{
+    position: relative;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: #efefef;
+
+    .title-s-1{
+      margin-bottom: 20px;
+
+      .img-payments {
+        position: relative;
+        display: inline-block;
+        margin-top: -3px;
+        margin-left: 7px;
+        height: 27px;
+      }
+    }
+
+    .cus-f-group-1{
+      >label, >legend{
+        background-color: #efefef;
+      }
+    }
+  }
+
+}

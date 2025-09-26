@@ -1,0 +1,52 @@
+body {
+	background-color: #FFFFFF;
+}
+
+.seguridataBannerContainer>img {
+	position: relative;
+	display: block;
+	margin: auto;
+	height: 70px;
+	width: 220px;
+	border-radius: 3%;
+}
+
+.mainContetDiv {
+   position: relative;
+   height: 90%;
+   width: 90%;
+   align-self: center;
+}
+
+.canvasDivContainer {
+	display: block;
+	padding: 12pt;
+}
+
+.canvasDivContainer>div {
+	float: left;
+	margin-left: 20%;
+	margin-top: 35px;
+}
+.drawnCanvas {
+	border: double green;
+	background-color: #FFFFFF;
+	cursor: pointer;
+}
+
+.buttonContainer {
+	float: left;
+	margin-top: 30px;
+	width: 100%;
+	margin-left: 40%;
+}
+
+.divChartContainer {
+	margin-top: 20px;
+	width: 200px;
+	height: 150px;
+}
+
+.cleanButton {
+	margin-top: 20px;
+}

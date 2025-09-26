@@ -1,0 +1,46 @@
+body,html{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	color: #000000;
+}
+
+p,h1,h2,h3,h4,h5,h6{
+	margin-bottom: 0px;
+}
+
+// Container
+.oversized-container{
+	@media screen and (min-width: 992px){
+		max-width: 98%;
+	}
+	@media screen and (min-width: 1630px){
+		max-width: 1590px;
+	}
+}
+
+// Backgrounds
+.placed-backg{
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+// Remove outline
+select:focus, select:active, select:hover, button:focus, button:active, button:hover,
+input:focus, input:active, input:hover, textarea:focus, textarea:active, textarea:hover{
+  box-shadow: none !important;
+  outline: none !important;
+}
+.custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow:none !important;
+}
+
+// Remove Arrows/Spinners
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
