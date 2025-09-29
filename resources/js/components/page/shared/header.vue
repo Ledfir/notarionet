@@ -111,52 +111,52 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg bg-white">
                     <div class="container-fluid">
-                    <a class="navbar-brand" @click="goHome" style="cursor: pointer;">
-                        <img src="/images/redesign/logo-notarynet.webp" alt="NotaryNet" class="img-fluid" style="width: 88px"/>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <router-link class="nav-link mr-1 link-header" :class="{ active: $route.path === '/documentos' }" to="/documentos">Documentos</router-link>
-                            </li>
-                            <li class="nav-item">
-                                <b-nav-item-dropdown text="Empresa" right>
-                                    <b-dropdown-item to="/validez-legal-de-documento-electronico">Validez legal</b-dropdown-item>
-                                    <b-dropdown-item to="/acreditaciones">Acreditaciones</b-dropdown-item>
-                                    <b-dropdown-item to="/solucion-de-conflictos-de-documentos-electronicos">Solución de conflictos</b-dropdown-item>
-                                    <b-dropdown-item to="/preguntas-frecuentes">Preguntas frecuentes</b-dropdown-item>
-                                    <b-dropdown-item to="/nuestra-empresa">Nuestra empresa</b-dropdown-item>
-                                </b-nav-item-dropdown>
-                            </li>
-                            <li class="nav-item">
-                                <b-nav-item-dropdown text="Mi cuenta" right>
-                                    <b-dropdown-item to="/login">Iniciar sesión</b-dropdown-item>
-                                    <b-dropdown-item to="/registrarse">Registrarse</b-dropdown-item>
-                                </b-nav-item-dropdown>
-                                <!-- <router-link class="nav-link mr-1 link-header" :class="{ active: $route.path === '/' }" to="/">Como funciona</router-link> -->
-                            </li>
-                            <li class="nav-item">
-                                <router-link class="nav-link mr-1 link-header" :class="{ active: $route.path === '/contacto' }" to="/contacto">Asesoría</router-link>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link mr-1 link-header" data-toggle="modal" data-target="#staticBackdrop" style="cursor: pointer;">
-                                    Busca el contrato
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="d-flex">
-                        <a class="btn rounded-circle me-2" @click="goToAccount" style="cursor: pointer;">
-
+                        <a class="navbar-brand" @click="goHome" style="cursor: pointer;">
+                            <img src="/images/redesign/logo-notarynet.webp" alt="NotaryNet" class="img-fluid" style="width: 88px"/>
                         </a>
-                        <a class="btn rounded-circle me-2" href="javascript:void(0)">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+                            <span class="navbar-toggler-icon"><img width="48" height="48" src="https://img.icons8.com/fluency/48/menu--v2.png" alt="menu--v2"/></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <router-link class="nav-link mr-1 link-header" :class="{ active: $route.path === '/documentos' }" to="/documentos">Documentos</router-link>
+                                </li>
+                                <li class="nav-item">
+                                    <b-nav-item-dropdown text="Empresa" right>
+                                        <b-dropdown-item to="/validez-legal-de-documento-electronico">Validez legal</b-dropdown-item>
+                                        <b-dropdown-item to="/acreditaciones">Acreditaciones</b-dropdown-item>
+                                        <b-dropdown-item to="/solucion-de-conflictos-de-documentos-electronicos">Solución de conflictos</b-dropdown-item>
+                                        <b-dropdown-item to="/preguntas-frecuentes">Preguntas frecuentes</b-dropdown-item>
+                                        <b-dropdown-item to="/nuestra-empresa">Nuestra empresa</b-dropdown-item>
+                                    </b-nav-item-dropdown>
+                                </li>
+                                <li class="nav-item">
+                                    <b-nav-item-dropdown text="Mi cuenta" right>
+                                        <b-dropdown-item to="/login">Iniciar sesión</b-dropdown-item>
+                                        <b-dropdown-item to="/registrarse">Registrarse</b-dropdown-item>
+                                    </b-nav-item-dropdown>
+                                    <!-- <router-link class="nav-link mr-1 link-header" :class="{ active: $route.path === '/' }" to="/">Como funciona</router-link> -->
+                                </li>
+                                <li class="nav-item">
+                                    <router-link class="nav-link mr-1 link-header" :class="{ active: $route.path === '/contacto' }" to="/contacto">Asesoría</router-link>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mr-1 link-header" data-toggle="modal" data-target="#staticBackdrop" style="cursor: pointer;">
+                                        Busca el contrato
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="d-flex">
+                            <a class="btn rounded-circle me-2" @click="goToAccount" style="cursor: pointer;">
 
-                        </a>
-                        <a class="btn btn-primary btn-header" @click="goToDocuments" style="cursor: pointer;">Ver documentos</a>
+                            </a>
+                            <a class="btn rounded-circle me-2" href="javascript:void(0)">
+
+                            </a>
+                            <a class="btn btn-primary btn-header" @click="goToDocuments" style="cursor: pointer;">Ver documentos</a>
+                            </div>
                         </div>
-                    </div>
                     </div>
                 </nav>
             </div>

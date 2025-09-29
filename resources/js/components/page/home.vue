@@ -289,7 +289,7 @@
                     <div class="row">
                         <div class="col-12">
                             <h6 class="text-center mb-4">Beneficios</h6>
-                            <h2 class="text-center mb-4">Ventajas de utilizar<br> NOTARIONET para firmar</h2>
+                            <h2 class="text-center mb-4 title-beneficios">Ventajas de utilizar<br> NOTARIONET para firmar</h2>
                             <h4 class="text-center mb-4 text-beneficio">
                                 Con NOTARIONET la firma de documentos es más rápida que nunca.<br>
                                 Aseguramos un proceso legal y seguro para todos nuestros usuarios.
@@ -657,8 +657,14 @@ export default {
     }
     @media (max-width: 768px) {
         #presentation-section .card-img-presentation {
-            max-width: 110px;
-            max-height: 110px;
+            max-width: 150px;
+            max-height: 150px;
+        }
+        #presentation-section .card-black h3, #presentation-section .card-blue h3{
+            font-size: 20px;
+        }
+        #presentation-section .card-black p, #presentation-section .card-blue p{
+            font-size: 18px;
         }
     }
     #beneficios h6{
@@ -870,5 +876,11 @@ export default {
     }
     .box-credit-s1 .box .col-info-1 .price{
         border-radius: 20px;
+    }
+    @media (max-width: 768px) {
+        #beneficios h2 {
+            font-size: 40px;
+            line-height: 1.2;
+        }
     }
 </style>

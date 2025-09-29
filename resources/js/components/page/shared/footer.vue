@@ -53,7 +53,7 @@
                 Todos los documentos expedidos cuentan con la cláusula modelo de arbitraje expedito y de baja cuantía del Centro de Arbitraje Empresarial, S.C.P. (“CAE”). <br>
                   Para mas información accede a: <a href="https://cae.com.mx/">https://cae.com.mx/</a><br>
                   Confirma con nuestro prestador de servicios de certificación PSC, Seguridata Privada, S.A. de C.V., la validez de los documentos firmados por NOTARIONET en la siguiente liga:<br>
-                  <a href="https://validador.seguridata.com:8443/ValidacionNOM/sgdata/home#hash">https://validador.seguridata.com:8443/ValidacionNOM/sgdata/home#hash</a>
+                  <a href="https://validador.seguridata.com:8443/ValidacionNOM/sgdata/home#hash" target="_blank" class="w-break-word">https://validador.seguridata.com:8443/ValidacionNOM/sgdata/home#hash</a>
               </p>
           </div>
         </div>

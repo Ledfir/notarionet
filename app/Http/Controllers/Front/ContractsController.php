@@ -51,7 +51,7 @@ class ContractsController extends Controller
             $contracts = Contract::select('id','title', 'description','title_en','categories_id','position', 'images_id')->where('categories_id',$value->id)->orderBy('position','asc')->get();
             foreach ($contracts as $keyc => $valuec) {
                 if($valuec->id != 25 && $valuec->id != 29 && $valuec->id != 30){
-                    $image = str_replace('http://127.0.0.1:8000/','https://notarionet.com/',Images::getUrl($valuec->images_id));
+                    $image = 'https://notarionet.com'.str_replace('http://127.0.0.1:8000','',Images::getUrl($valuec->images_id));
                     $aux = [
                         'id'=>$valuec->id,
                         'name'=>$valuec->title,
@@ -221,7 +221,7 @@ class ContractsController extends Controller
         $gallery = [];
         array_push($gallery, Images::getUrl($row->images_id));
         $row->gallery = $gallery;
-        $row->img = str_replace('http://127.0.0.1:8000/','https://notarionet.com/',Images::getUrl($row->images_id));
+        $row->img = 'https://notarionet.com'.str_replace('http://127.0.0.1:8000','',Images::getUrl($row->images_id));
         return response()->json($row);
     }
     public function saveSignatureContracts($id)
