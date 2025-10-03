@@ -21,6 +21,29 @@
   <meta name="description" content="NOTARYNET es una empresa creada por abogados y empresarios con mas de 30 a帽os de experiencia y con la intenci贸n de simplificar el proceso de la firma de contratos y documentos de todo tipo." />
 
 	@include('shared.jsDir')
+<style>
+    @font-face {
+        font-family: 'Helvetica';
+        src: url('{{ asset('fonts/helvetica/Helvetica.ttf') }}') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'Helvetica';
+        src: url('{{ asset('fonts/helvetica/Helvetica-Bold.ttf') }}') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'Helvetica';
+        src: url('{{ asset('fonts/helvetica/Helvetica-Italic.ttf') }}') format('truetype');
+        font-weight: normal;
+        font-style: italic;
+    }
+    body {
+        font-family: 'Helvetica', sans-serif;
+    }
+</style>
 </head>
 
 <body>

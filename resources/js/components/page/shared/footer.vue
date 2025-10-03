@@ -49,7 +49,7 @@
               <hr style="margin: 20px 0; border: 1px solid #6D6D6D;">
           </div>
           <div class="col-12">
-              <p style="color: #ffffff;">
+              <p style="color: #ffffff; font-size: 14px;">
                 Todos los documentos expedidos cuentan con la cláusula modelo de arbitraje expedito y de baja cuantía del Centro de Arbitraje Empresarial, S.C.P. (“CAE”). <br>
                   Para mas información accede a: <a href="https://cae.com.mx/">https://cae.com.mx/</a><br>
                   Confirma con nuestro prestador de servicios de certificación PSC, Seguridata Privada, S.A. de C.V., la validez de los documentos firmados por NOTARIONET en la siguiente liga:<br>
@@ -136,18 +136,19 @@ export default {
     }
 
     .footer-title {
-    font-size: 21px;
+    font-size: 16px;
     font-weight: 400;
     text-align: start;
     }
     .footer-link{
-    font-size: 18px;
-    font-weight: 300;
-    color: #ffffff !important;
-    text-decoration: none;
+        font-size: 16px;
+        font-weight: 300;
+        color: #ffffff !important;
+        text-decoration: none;
     }
     p.footer-link {
         text-align: start;
+        font-size: 16px;
     }
     .footer-link:hover {
     color:rgb(119, 119, 119) !important;

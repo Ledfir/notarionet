@@ -22,7 +22,7 @@
         </div>
 
         <div class="col-lg-6 col-info" v-else>
-          <h1 class="title-s-1">NUESTRA EMPRESA</h1>
+          <h1 class="title-s-1" style="font-size: 40px;">NUESTRA EMPRESA</h1>
 
           <p>
             NOTARIONET es una empresa creada por abogados y empresarios con mas de 30 años de experiencia y con la intención de simplificar el proceso de la firma de contratos y documentos de todo tipo.
@@ -46,6 +46,10 @@ export default {
 </script>
 
 <style>
+    #info-page-s2 .main-section{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
     .slide-in-left {
         -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
                 animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;

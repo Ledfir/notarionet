@@ -1,5 +1,5 @@
 <template lang="html">
-  <div id="info-page-s2">
+  <div id="info-page-s2" style="padding-top: 100px; padding-bottom: 100px;">
 
     <section class="container oversized-container text-justify py-lg-3 main-section">
       <div class="row align-items-center">
@@ -21,7 +21,7 @@
         </div>
 
         <div class="col-lg-7 col-info" v-else>
-          <h1 class="title-s-1">SOLUCIÓN DE CONFLICTOS DE DOCUMENTOS ELECTRÓNICOS</h1>
+          <h1 class="title-s-1" style="font-size: 40px;">SOLUCIÓN DE CONFLICTOS DE DOCUMENTOS ELECTRÓNICOS</h1>
 
           <p>
             El Centro de Arbitraje Empresarial S.C.P. (“CAE”) es una institución privada cuyo objeto es prestar el servicio de administración de arbitrajes y otros mecanismos alternativos de solución de controversias de conformidad con lo dispuesto por este Reglamento.

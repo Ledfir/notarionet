@@ -1,5 +1,5 @@
 <template lang="html">
-    <div id="info-page-s1">
+    <div id="info-page-s1" style="padding-top: 100px; padding-bottom: 100px;">
         <section class="placed-backg banner-section" v-bind:style="{ backgroundImage: 'url(https://notarionet.com/public/images/pages/documents/banner-1.jpg)' }"></section>
         <section class="container oversized-container main-section m-h-inherit">
             <h1 class="title-s-1">{{ $t("home.accreditations") }}</h1>

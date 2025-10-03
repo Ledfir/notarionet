@@ -1,5 +1,5 @@
 <template lang="html">
-    <div id="info-page-s1">
+    <div id="info-page-s1" style="padding-top: 100px; padding-bottom: 100px;">
         <section class="container oversized-container text-justify main-section" v-if="$i18n.locale == 'en'">
             <h1 class="title-s-1">Frequently Asked Questions</h1>
             <div class="accordion" id="accordioneEn">
@@ -92,7 +92,7 @@
             </div>
         </section>
         <section class="container oversized-container text-justify main-section" v-else>
-            <h1 class="title-s-1 mb-4">Preguntas frecuentes</h1>
+            <h1 class="title-s-1 mb-4" style="font-size: 40px;">Preguntas frecuentes</h1>
             <div class="accordion" id="accordioneEs">
                 <div class="card">
                     <div class="card-header" id="headingOne">

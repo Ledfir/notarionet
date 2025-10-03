@@ -246,8 +246,8 @@
                         cualquier lugar. Simplifica tus trámites legales con nuestra plataforma confiable y
                         fácil de usar.
                         </p>
-                        <a href="javascript:void(0)" class="btn btn-primary mr-4 scale-down-center">Firma ahora</a>
-                        <a href="javascript:void(0)" class="btn btn-outline-secondary scale-down-center">Empieza</a>
+                        <a href="javascript:void(0)" @click="goToCreditos" class="btn btn-primary mr-4 scale-down-center">Firma ahora</a>
+                        <a href="javascript:void(0)" @click="goToDocumentos" class="btn btn-outline-secondary scale-down-center">Empieza</a>
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="d-block">
@@ -368,13 +368,13 @@
                         </div>
                     </div>
                     <div class="text-center py-4">
-                        <button class="btn btn-proceso">
+                        <button class="btn btn-proceso" @click="goToDocumentos">
                             Comprar un documento
                         </button>
                     </div>
                 </div>
             </div>
-            <div id="credits" class="container oversized-container packages-section">
+            <div id="credits" class="container packages-section" style="padding-top: 100px; padding-bottom: 100px;">
                 <h2 class="title-s-1 text-center">{{ $t("home.credits") }}</h2>
                 <div class="row">
                     <div class="col-12 col-carousel">
@@ -450,7 +450,7 @@
                                 <p class="text-firma mb-2">
                                     Compra tu contrato, fírmalo en línea y recíbelo con validez legal en minutos.
                                 </p>
-                                <button class="btn btn-firma">
+                                <button class="btn btn-firma" @click="goToCreditos">
                                     Comprar
                                 </button>
                             </div>
@@ -578,6 +578,12 @@ export default {
 
         });
     },
+    goToCreditos(){
+      this.$router.push('/creditos');
+    },
+    goToDocumentos(){
+      this.$router.push('/documentos');
+    },
 
     openModalCer(title, pdfLink) {
       this.modalObj = {
@@ -676,7 +682,7 @@ export default {
         margin-top: 20px;
     }
     #beneficios h2{
-        font-size: 65px;
+        font-size: 40px;
         font-weight: 300;
         color: #000000;
         text-align: center;
@@ -748,7 +754,7 @@ export default {
         border: 2px solid #FFFFFF;
     }
     .card-proceso h2 {
-        font-size: 65px;
+        font-size: 40px;
         font-weight: 300;
         color: #FFFFFF;
         margin-bottom: 10px;
@@ -782,7 +788,7 @@ export default {
     }
     .title-testimonios {
         font-weight: 300;
-        font-size: 65px;
+        font-size: 40px;
         line-height: 120%;
         letter-spacing: 0%;
         text-align: left;
